@@ -1,9 +1,12 @@
-body{
+
+/* Styling For Mobile Viewpoint */
+*{
     box-sizing: border-box;
 }
 .container{
-    display: flex;
-    flex-direction: column;
+    width:90%;
+    margin: 0 auto;
+    
 }
 .sedan{
     background-color: hsl(31, 77%, 52%);
@@ -61,3 +64,33 @@ h1{
     font-family: 'Big Shoulders Display', cursive;
     color: hsl(0, 0%, 95%);
 }
+h1,p,button{
+    margin: 20px 0;
+}
+
+
+/* Styling For Desktop viewpoint */
+@media only screen and (min-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        width:80%;
+        margin: 0 auto;
+        min-height: 600px;
+        
+    }
+    .sedan{
+        border-radius: 12px 0 0 12px;
+        
+    }
+    .luxury{
+        border-radius: 0 12px 12px 0;
+        
+    }
+   h1,p,button{
+       margin: 70px 0;
+   }
+   p{
+       line-height: 1.8;
+   }
+} 
